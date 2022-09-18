@@ -25,6 +25,13 @@
       </nav>
     </header>
     <main>
+    <ol class="post-list">
+      {{#each posts as |post|}}
+      <li>
+      {{> post-info post }}
+      </li>
+      {{/each}}
+    </ol>
       {{{ body }}}
     </main>
     <footer>
