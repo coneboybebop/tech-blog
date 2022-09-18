@@ -15,7 +15,6 @@
         <a href="/">Tech Blog</a>
       </h1>
       <nav>
-        <a href="/homepage">home</a>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
@@ -25,13 +24,6 @@
       </nav>
     </header>
     <main>
-    <ol class="post-list">
-      {{#each posts as |post|}}
-      <li>
-      {{> post-info post }}
-      </li>
-      {{/each}}
-    </ol>
       {{{ body }}}
     </main>
     <footer>
